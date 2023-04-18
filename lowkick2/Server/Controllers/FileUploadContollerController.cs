@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
@@ -7,40 +8,24 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace lowkick2.Server.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
-    public class FileUploadContollerController : ControllerBase
+    [Route("api/[controller]")]
+    public class FileUploadController : ControllerBase
     {
-        // GET: api/FileUploadContoller
-        [HttpGet]
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
-
-        // GET: api/FileUploadContoller/5
-        [HttpGet("{id}", Name = "Get")]
-        public string Get(int id)
-        {
-            return "value";
-        }
-
-        // POST: api/FileUploadContoller
         [HttpPost]
-        public void Post([FromBody] string value)
+        public async Task<IActionResult> Post(IFormFile file)
         {
-        }
+            if (file == null || file.Length == 0)
+                return BadRequest("Please select a file to upload.");
 
-        // PUT: api/FileUploadContoller/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
+            var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", file.FileName);
 
-        // DELETE: api/FileUploadContoller/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
+            using (var stream = new FileStream(filePath, FileMode.Create))
+            {
+                await file.CopyToAsync(stream);
+            }
+
+            return Ok(new { file.Length, filePath });
         }
     }
 }

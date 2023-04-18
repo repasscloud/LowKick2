@@ -8,6 +8,9 @@ public class Program
     {
         var builder = WebApplication.CreateBuilder(args);
 
+        // Enable swagger
+        builder.Services.AddSwaggerGen();
+
         // Add services to the container.
 
         builder.Services.AddControllersWithViews();
@@ -27,6 +30,12 @@ public class Program
 
         app.UseBlazorFrameworkFiles();
         app.UseStaticFiles();
+
+        app.UseSwagger();
+        app.UseSwaggerUI(c =>
+        {
+            c.SwaggerEndpoint("/swagger/v1/swagger.json", "Blazor API v1");
+        });
 
         app.UseRouting();
 
