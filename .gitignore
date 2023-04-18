@@ -1,3 +1,6 @@
+# file uploads from testing
+lowkick2/Server/uploads/*.pdf
+
 # globs
 Makefile.in
 *.userprefs
