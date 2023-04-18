@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1705.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lowkick2.Server", "lowkick2\Server\lowkick2.Server.csproj", "{1F5DBB21-27D9-4BF6-92FF-A0FF5969DACF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lowkick2.Client", "lowkick2\Client\lowkick2.Client.csproj", "{452A7317-6251-4C67-9ABB-CAD1B32C306E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lowkick2.Shared", "lowkick2\Shared\lowkick2.Shared.csproj", "{11CBC4EE-1506-4285-AD87-004D5FDAFC9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "docx2pdf", "docx2pdf\docx2pdf.csproj", "{2B7A583B-3635-4588-9CD7-9673AFFE6848}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pdf2docx", "pdf2docx\pdf2docx.csproj", "{68D2AE5B-ABF1-4B45-8383-043B3D0B3AFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "loremipsum", "loremipsum\loremipsum.csproj", "{DE7A1F9C-D5D6-4D3A-B692-0712940310DE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3157B068-2219-48AA-9129-C234AA349D1A}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F5DBB21-27D9-4BF6-92FF-A0FF5969DACF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F5DBB21-27D9-4BF6-92FF-A0FF5969DACF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F5DBB21-27D9-4BF6-92FF-A0FF5969DACF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F5DBB21-27D9-4BF6-92FF-A0FF5969DACF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{452A7317-6251-4C67-9ABB-CAD1B32C306E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{452A7317-6251-4C67-9ABB-CAD1B32C306E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{452A7317-6251-4C67-9ABB-CAD1B32C306E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{452A7317-6251-4C67-9ABB-CAD1B32C306E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11CBC4EE-1506-4285-AD87-004D5FDAFC9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11CBC4EE-1506-4285-AD87-004D5FDAFC9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11CBC4EE-1506-4285-AD87-004D5FDAFC9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11CBC4EE-1506-4285-AD87-004D5FDAFC9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B7A583B-3635-4588-9CD7-9673AFFE6848}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B7A583B-3635-4588-9CD7-9673AFFE6848}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B7A583B-3635-4588-9CD7-9673AFFE6848}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B7A583B-3635-4588-9CD7-9673AFFE6848}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68D2AE5B-ABF1-4B45-8383-043B3D0B3AFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68D2AE5B-ABF1-4B45-8383-043B3D0B3AFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68D2AE5B-ABF1-4B45-8383-043B3D0B3AFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68D2AE5B-ABF1-4B45-8383-043B3D0B3AFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE7A1F9C-D5D6-4D3A-B692-0712940310DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE7A1F9C-D5D6-4D3A-B692-0712940310DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE7A1F9C-D5D6-4D3A-B692-0712940310DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE7A1F9C-D5D6-4D3A-B692-0712940310DE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3FD9199A-3B91-49B6-88A4-2C632962256B}
+	EndGlobalSection
+EndGlobal
